@@ -1,5 +1,10 @@
 pipeline{
 agent any
-stages{
-stage('cloning from github')
+stages
 {
+  stage('cloning from github')
+   {
+     git credentialsId: 'gitjun', url: 'https://github.com/bhoomikakrishnappa/Repo1.git'
+    }
+  }
+ }
